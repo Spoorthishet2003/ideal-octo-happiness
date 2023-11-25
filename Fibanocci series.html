@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>fibanocci</title>
+
+
+<script>
+function fibo()
+{
+var fib1=0, fib2=1, fib=0;
+var n=prompt("enter the value of n");
+document.write("<h2>Fibanocci series is:</h2>");
+document.write("<h2>" +fib1+ "</h2>");
+document.write("<h2>" +fib2+ "</h2>");
+for(i=3; i<=n; i++)
+{
+fib=fib1+fib2;
+fib1=fib2;
+fib2=fib;
+document.write("<h2>" +fib+ "</h2>");
+}
+}
+</script>
+</head>
+<body onload="fibo()">
+<center><h1>fibanocci series<h1><center>
+</body>
+</html>
+
