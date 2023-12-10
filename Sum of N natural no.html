@@ -1,0 +1,57 @@
+//Using CSS and Javascript program to find n natural numbers.
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body{
+
+background-color: rgb(238,174,202);
+background-color: radial-gradient(circle, rgba(238,174,202,1) 23%, rgba(233,148,148,1) 100%);
+}
+h1{
+	font-family:italic;
+	color:red;
+	margin:0 auto;
+}
+
+div{
+width:700px;
+margin:0 auto;
+padding:30px;
+background-color: lightgreen; 
+border-radius:10px;
+border: solid 5px black;
+}
+</style>
+<title>sum</title>
+<script>
+function calculatesum()
+{
+var n= parseInt(document.getElementById("num").value);
+var i,sum=0;
+for(var i=1; i<=n;i++)
+{
+sum=sum+i;
+}
+document.getElementById("Sumoutput").value=sum;
+}
+</script>
+</head>
+<body>
+<center><h1>SUM OF N NATURAL NUMBERS</h1></center>
+<div>
+<table align="center">
+<tr>
+<th> Enter the Value of n </th>
+<th><input type="number" id="num"></th>
+</tr>
+<tr>
+<th>Result</th>
+<td><input type="number" id="Sumoutput"></th>
+</tr>
+</div>
+</table>
+<center><input type="button" value="Calculate" onclick="calculatesum()"></center>
+</body>
+</html>
