@@ -1,0 +1,51 @@
+//Squares and cobes of first 10 integer numbers....
+
+<!Doctype html>
+<html>
+<head>
+<style>
+
+body{
+background-color:purple;
+}
+
+h1{
+	font-family:arial;
+	color: rgb(131,58,180);
+    linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(190,9,9,1) 50%, rgba(252,176,69,1) 100%);;
+	margin:0 auto;
+}
+
+div{
+width:700px;
+margin:0 auto;
+padding:30px;
+background-color:background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(149,154,162,1) 100%);; 
+border-radius:10px;
+border: solid 5px black;
+}
+
+</style>
+<title>squares and cubes</title>
+
+</head>
+<body>
+<center><h1>Squares And Cubes</h1><center>
+<div>
+<table align="center" border="1">
+<tr>
+<th><b><h4>NUMBERS</h4><b></th>
+<th><b><h4>SQUARES</h4><b></th>
+<th><b><h4>CUBES</h4><b></th>
+</tr>
+<script>
+for(var n=0; n<=10; n++)
+{
+document.write("<tr><td>" +n+ "</td><td>" +n*n+ "</td><td>" +n*n*n+ "</td></tr>")
+}
+</script>
+</table>
+</div>
+</body>
+</html>
