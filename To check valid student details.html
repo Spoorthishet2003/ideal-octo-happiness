@@ -1,0 +1,69 @@
+//A program to check the USN and SEM is valid or not using Html and css.
+
+<!DOCTYPE  html>
+<html>
+<head>
+<style>
+h1{
+background-color:;
+}
+body{
+background-color:red;
+}
+div{
+margin:0 auto;
+background-color:blue;
+border-radius:5px;
+width:500px;
+padding:20px;
+}
+</style>
+<title>Student Details</title>
+
+
+</head>
+
+<body>
+<center><h1>STUDENT DETAILS</center>
+<form><center>
+<div>
+<table>
+<tr>
+<th><label for="name" >Name of the student:</label></th>
+<td><input type="text" id="name" ></td>
+</tr>
+<tr>
+<th><label for="usn" >USN of the student:</label></th>
+<td><input type="text" id="usn" ></td>
+</tr>
+<tr>
+<th><label for="sem" >Semester of the student:</label></th>
+<td><input type="text" id="sem" ></td>
+</tr>
+</table>
+<br><input type="submit" value="check usn" onclick="validate()"><br><br>
+<input type="submit" value="check sem" onclick="validate()">
+</form></center>
+
+<script>
+function validate()
+{
+var pattern=/^[1-4][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]$/
+usn=document.getElementById("usn")
+if(!usn.value.match(pattern))
+alert("Invalid usn")
+else 
+alert("valid usn")
+
+var pattern=/^[1-8]$/
+sem=document.getElementById("sem")
+if(!sem.value.match(pattern))
+alert("Invalid sem")
+else
+alert("valid sem")
+
+}
+</script>
+</div>
+</body>
+</html>
