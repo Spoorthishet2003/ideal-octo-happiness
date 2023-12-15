@@ -1,0 +1,51 @@
+//To find the leftmost vowel in a String and reverse of a number by using prompt.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color: rgb(238,174,202);
+background-color: radial-gradient(circle, rgba(238,174,202,1) 23%, rgba(233,148,148,1) 100%);
+}
+</style>
+<script>
+	function string_operation()
+	{
+		var str = prompt("enter the input");
+		if(isNaN(str))
+		{
+			for(i=0;i<str.length;i++)
+			{
+				var chr=str.charAt(i);
+				if(chr=='A'||chr=='E'|| chr=='I'|| chr=='O'||chr=='U'||chr=='a'||chr=='e'||chr=='i'||chr=='o'||chr=='u')
+					break;
+			}
+			if(i<str.length){
+				alert("poisition of leftmost vowel is" + (i+1));
+			}
+			else{
+alert("no vowel found in the string");
+}
+}
+else{
+var num,rev=0,remainder;
+num=parseInt(str);
+while(num!=0)
+{
+remainder=num%10;
+num=parseInt(num/10);
+rev=rev*10+remainder;
+}
+alert("reverse of number" + rev)
+                       
+}
+}
+</script>
+</head>
+<body onload="string_operation();">
+<center>
+<h1>STRING AND VOWEL NUMBER</h1>
+</center>
+</body>
+</html>
